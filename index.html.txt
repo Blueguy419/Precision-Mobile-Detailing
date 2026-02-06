@@ -1,0 +1,327 @@
+Index.html
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Mobile car detailing in San Marcos, CA. Fast, affordable, and professional. Book now: 949-375-1329" />
+  <title>Brent & Jaxson Mobile Detailing | San Marcos, CA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#">
+        <span class="brand__mark" aria-hidden="true">✦</span>
+        <span class="brand__text">Brent &amp; Jaxson</span>
+        <span class="brand__sub">Mobile Detailing</span>
+      </a>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--ghost">Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileMenu" hidden>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">Available in the San Marcos area • We come to you</p>
+          <h1>Clean car, no stress.<br><span class="accent">Mobile detailing</span> that looks expensive.</h1>
+          <p class="lead">
+            Fast, affordable, and professional detailing at your home, apartment, or office.
+            Ask about your <strong>$10 off first detail</strong>.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="tel:+19493751329">Call: (949) 375-1329</a>
+            <a class="btn btn--dark" href="sms:+19493751329?&body=Hi%20Brent%20%26%20Jaxson!%20I%27d%20like%20to%20book%20a%20detail.%20My%20car%20type%3A%20____%20%7C%20Location%3A%20____%20%7C%20Best%20time%3A%20____">
+              Text to book
+            </a>
+          </div>
+
+          <div class="trustRow">
+            <div class="trust">
+              <span class="trust__big">⭐ 5.0</span>
+              <span class="trust__small">Local satisfaction</span>
+            </div>
+            <div class="trust">
+              <span class="trust__big">Same-day</span>
+              <span class="trust__small">When available</span>
+            </div>
+            <div class="trust">
+              <span class="trust__big">Mobile</span>
+              <span class="trust__small">We bring supplies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="heroCard">
+            <div class="heroCard__top">
+              <h2>Quick Quote</h2>
+              <p>Send a text and we’ll respond fast.</p>
+            </div>
+            <form class="quote" id="quoteForm">
+              <label>
+                Car type
+                <input name="car" placeholder="Sedan / SUV / Truck" required />
+              </label>
+              <label>
+                Service
+                <select name="service" required>
+                  <option value="">Select…</option>
+                  <option>Quick Wash</option>
+                  <option>Exterior Detail</option>
+                  <option>Full Detail (Interior + Exterior)</option>
+                  <option>Wax Finish</option>
+                </select>
+              </label>
+              <label>
+                Location (City)
+                <input name="city" placeholder="San Marcos / Escondido / Vista" required />
+              </label>
+              <button class="btn btn--primary" type="submit">Text this info</button>
+              <p class="fine">This opens your Messages app — no info is stored on this site.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__badges">
+        <div class="badge">✅ Exterior + interior options</div>
+        <div class="badge">✅ Apartment-friendly</div>
+        <div class="badge">✅ Great for resale</div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Services</h2>
+          <p>Pick a package — we’ll make it look right.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Quick Wash</h3>
+            <ul class="list">
+              <li>Hand wash + dry</li>
+              <li>Wheels + tires</li>
+              <li>Quick wipe-down</li>
+            </ul>
+            <p class="tag">Best for maintenance</p>
+          </article>
+
+          <article class="card">
+            <h3>Exterior Detail</h3>
+            <ul class="list">
+              <li>Foam wash + dry</li>
+              <li>Wheel + tire deep clean</li>
+              <li>Windows + trim wipe</li>
+            </ul>
+            <p class="tag">Best for shine</p>
+          </article>
+
+          <article class="card">
+            <h3>Full Detail</h3>
+            <ul class="list">
+              <li>Interior vacuum + wipe</li>
+              <li>Exterior detail included</li>
+              <li>Door jambs + finishing touches</li>
+            </ul>
+            <p class="tag">Best overall value</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section section--alt">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Pricing</h2>
+          <p>Simple, transparent, and fair. Ask about <strong>$10 off first detail</strong>.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="priceCard">
+            <h3>Quick Wash</h3>
+            <p class="price">$40<span>/starting</span></p>
+            <ul class="list">
+              <li>Hand wash + dry</li>
+              <li>Wheels + tires</li>
+              <li>Windows</li>
+            </ul>
+            <a class="btn btn--dark" href="#contact">Book Quick Wash</a>
+          </article>
+
+          <article class="priceCard priceCard--featured">
+            <div class="ribbon">Most popular</div>
+            <h3>Full Detail</h3>
+            <p class="price">$80<span>/starting</span></p>
+            <ul class="list">
+              <li>Interior vacuum + wipe</li>
+              <li>Exterior detail</li>
+              <li>Finishing touches</li>
+            </ul>
+            <a class="btn btn--primary" href="#contact">Book Full Detail</a>
+          </article>
+
+          <article class="priceCard">
+            <h3>Wax Finish</h3>
+            <p class="price">$—<span>/quote</span></p>
+            <ul class="list">
+              <li>Added protection</li>
+              <li>Deep gloss</li>
+              <li>Great for resale</li>
+            </ul>
+            <a class="btn btn--dark" href="sms:+19493751329?&body=Hi%20Brent%20%26%20Jaxson!%20Can%20I%20get%20a%20quote%20for%20a%20wax%20finish%3F%20Car%3A%20____%20Location%3A%20____">
+              Text for Wax Quote
+            </a>
+          </article>
+        </div>
+
+        <p class="fine center">
+          Final price depends on size/condition (pet hair, heavy stains, etc.). We’ll confirm before starting.
+        </p>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>What customers say</h2>
+          <p>Replace these with real reviews when you have them.</p>
+        </div>
+
+        <div class="grid3">
+          <figure class="review">
+            <blockquote>“Showed up on time and my car looked brand new. Worth it.”</blockquote>
+            <figcaption>— Local customer</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>“Interior was spotless, even the tight spots. Super friendly.”</blockquote>
+            <figcaption>— Local customer</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>“Fast and affordable. I booked again the next month.”</blockquote>
+            <figcaption>— Local customer</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>FAQ</h2>
+          <p>Quick answers so you can book confidently.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Do you bring your own water and supplies?</summary>
+            <p>We bring our supplies. If water access is available, that helps — if not, text us your situation and we’ll confirm options.</p>
+          </details>
+          <details>
+            <summary>How long does a detail take?</summary>
+            <p>Most jobs are 45–90 minutes depending on size and condition. Full details can take longer.</p>
+          </details>
+          <details>
+            <summary>Where do you service?</summary>
+            <p>San Marcos and nearby areas (Escondido, Vista, Carlsbad, San Diego North County). Text your city and we’ll confirm.</p>
+          </details>
+          <details>
+            <summary>What’s the $10 off first detail?</summary>
+            <p>First-time customers get $10 off a qualifying detail. Mention it when booking.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Book now</h2>
+          <p class="lead">Call or text and we’ll lock in a time.</p>
+
+          <div class="contactCards">
+            <a class="contactCard" href="tel:+19493751329">
+              <span class="icon" aria-hidden="true">📞</span>
+              <div>
+                <strong>Call</strong>
+                <span>(949) 375-1329</span>
+              </div>
+            </a>
+
+            <a class="contactCard" href="sms:+19493751329?&body=Hi%20Brent%20%26%20Jaxson!%20I%27d%20like%20to%20book.%20Car%3A%20____%20Service%3A%20____%20City%3A%20____%20Best%20time%3A%20____">
+              <span class="icon" aria-hidden="true">💬</span>
+              <div>
+                <strong>Text</strong>
+                <span>Quick booking message</span>
+              </div>
+            </a>
+
+            <a class="contactCard" href="https://www.google.com/maps/search/?api=1&query=San+Marcos+CA" target="_blank" rel="noreferrer">
+              <span class="icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Service area</strong>
+                <span>San Marcos + nearby</span>
+              </div>
+            </a>
+          </div>
+
+          <p class="fine">Hours: update this anytime in <code>index.html</code>.</p>
+        </div>
+
+        <div class="contactPanel">
+          <h3>Before &amp; after gallery</h3>
+          <p class="fine">Add your photos in <code>/assets</code> and update the filenames below.</p>
+
+          <div class="gallery">
+            <img src="assets/car1.jpg" alt="Car after detailing example 1" loading="lazy" />
+            <img src="assets/car2.jpg" alt="Car after detailing example 2" loading="lazy" />
+            <img src="assets/car3.jpg" alt="Car after detailing example 3" loading="lazy" />
+            <img src="assets/car4.jpg" alt="Car after detailing example 4" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Brent &amp; Jaxson Mobile Detailing. All rights reserved.</p>
+      <p class="fine">Built with GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
