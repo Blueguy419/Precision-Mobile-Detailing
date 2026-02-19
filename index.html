@@ -1,208 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Mobile car detailing in San Marcos, CA. Fast, affordable, and professional. Book now: 949-375-1329" />
-  <title>Brent & Jaxson Mobile Detailing | San Marcos, CA</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Precision Mobile Detailing | San Marcos</title>
+  <meta name="description" content="Precision Mobile Detailing — mobile detailing in San Marcos & North County. Call or text to book. $10 off first detail." />
 
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav">
-    <div class="container nav__inner">
-      <a class="brand" href="#">
-        <span class="brand__mark" aria-hidden="true">✦</span>
-        <span class="brand__text">Brent &amp; Jaxson</span>
-        <span class="brand__sub">Mobile Detailing</span>
+<body>
+  <!-- Top Nav -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Precision Mobile Detailing home">
+        <div class="brandMark" aria-hidden="true">✦</div>
+        <div class="brandText">
+          <div class="brandName">Precision Mobile Detailing</div>
+          <div class="brandSub">Mobile detailing • San Marcos + nearby</div>
+        </div>
       </a>
 
-      <nav class="menu" aria-label="Primary">
+      <nav class="links" aria-label="Primary navigation">
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
+        <a href="#flyers">Flyers</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn--ghost">Contact</a>
+        <a class="pillBtn" href="#contact">Contact</a>
       </nav>
 
-      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu">☰</button>
     </div>
 
-    <div class="mobileMenu" hidden>
+    <div class="container mobileMenu" id="mobileMenu" aria-label="Mobile navigation">
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
+      <a href="#flyers">Flyers</a>
       <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </div>
   </header>
 
-  <main id="main">
+  <!-- Hero -->
+  <main id="top">
     <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="pill">Available in the San Marcos area • We come to you</p>
-          <h1>Clean car, no stress.<br><span class="accent">Mobile detailing</span> that looks expensive.</h1>
-          <p class="lead">
+      <div class="container heroGrid">
+        <div class="heroLeft">
+          <div class="badgeRow">
+            <span class="badge">Available in the San Marcos area • We come to you</span>
+          </div>
+
+          <h1 class="heroTitle">
+            Clean car, no stress.<br />
+            <span class="accent">Mobile detailing</span> that looks expensive.
+          </h1>
+
+          <p class="heroDesc">
             Fast, affordable, and professional detailing at your home, apartment, or office.
             Ask about your <strong>$10 off first detail</strong>.
           </p>
 
           <div class="ctaRow">
-            <a class="btn btn--primary" href="tel:+19493751329">Call: (949) 375-1329</a>
-            <a class="btn btn--dark" href="sms:+19493751329?&body=Hi%20Brent%20%26%20Jaxson!%20I%27d%20like%20to%20book%20a%20detail.%20My%20car%20type%3A%20____%20%7C%20Location%3A%20____%20%7C%20Best%20time%3A%20____">
-              Text to book
-            </a>
+            <a class="btn primary" href="tel:+19493751329">Call: (949) 375-1329</a>
+            <a class="btn ghost" href="sms:+19493751329?&body=Hi%20Precision%20Mobile%20Detailing!%20I%20want%20to%20book%20a%20detail.%20My%20car%20is%20a%20____%20and%20I%20need%20____.%20I%E2%80%99m%20located%20in%20____.%20Best%20time%20is%20____.">Text to book</a>
           </div>
 
-          <div class="trustRow">
-            <div class="trust">
-              <span class="trust__big">⭐ 5.0</span>
-              <span class="trust__small">Local satisfaction</span>
+          <div class="miniStats">
+            <div class="statCard">
+              <div class="statTop">⭐ 5.0</div>
+              <div class="statSub">Local satisfaction</div>
             </div>
-            <div class="trust">
-              <span class="trust__big">Same-day</span>
-              <span class="trust__small">When available</span>
+            <div class="statCard">
+              <div class="statTop">Same-day</div>
+              <div class="statSub">When available</div>
             </div>
-            <div class="trust">
-              <span class="trust__big">Mobile</span>
-              <span class="trust__small">We bring supplies</span>
+            <div class="statCard">
+              <div class="statTop">Mobile</div>
+              <div class="statSub">We bring supplies</div>
             </div>
+          </div>
+
+          <div class="chips">
+            <span class="chip">✅ Exterior + interior options</span>
+            <span class="chip">✅ Apartment-friendly</span>
+            <span class="chip">✅ Great for resale</span>
           </div>
         </div>
 
-        <div class="hero__card">
-          <div class="heroCard">
-            <div class="heroCard__top">
-              <h2>Quick Quote</h2>
-              <p>Send a text and we’ll respond fast.</p>
+        <aside class="heroRight">
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Quick Quote</div>
+              <div class="cardSub">Send a text and we’ll respond fast.</div>
             </div>
-            <form class="quote" id="quoteForm">
-              <label>
+
+            <form id="quoteForm" class="form">
+              <label class="label">
                 Car type
-                <input name="car" placeholder="Sedan / SUV / Truck" required />
+                <input name="carType" placeholder="Sedan / SUV / Truck" required />
               </label>
-              <label>
+
+              <label class="label">
                 Service
                 <select name="service" required>
-                  <option value="">Select…</option>
-                  <option>Quick Wash</option>
-                  <option>Exterior Detail</option>
-                  <option>Full Detail (Interior + Exterior)</option>
-                  <option>Wax Finish</option>
+                  <option value="" disabled selected>Select…</option>
+                  <option value="Quick Wash">Quick Wash</option>
+                  <option value="Exterior Detail">Exterior Detail</option>
+                  <option value="Full Detail">Full Detail</option>
+                  <option value="Wax Finish (Quote)">Wax Finish (Quote)</option>
                 </select>
               </label>
-              <label>
+
+              <label class="label">
                 Location (City)
                 <input name="city" placeholder="San Marcos / Escondido / Vista" required />
               </label>
-              <button class="btn btn--primary" type="submit">Text this info</button>
+
+              <button class="btn primary full" type="submit">Text this info</button>
               <p class="fine">This opens your Messages app — no info is stored on this site.</p>
             </form>
           </div>
-        </div>
-      </div>
-
-      <div class="container hero__badges">
-        <div class="badge">✅ Exterior + interior options</div>
-        <div class="badge">✅ Apartment-friendly</div>
-        <div class="badge">✅ Great for resale</div>
+        </aside>
       </div>
     </section>
 
+    <!-- Services -->
     <section id="services" class="section">
       <div class="container">
-        <div class="sectionHead">
-          <h2>Services</h2>
-          <p>Pick a package — we’ll make it look right.</p>
-        </div>
+        <h2>Services</h2>
+        <p class="muted">Pick a package — we’ll make it look right.</p>
 
         <div class="grid3">
-          <article class="card">
+          <div class="box">
             <h3>Quick Wash</h3>
-            <ul class="list">
+            <ul>
               <li>Hand wash + dry</li>
               <li>Wheels + tires</li>
               <li>Quick wipe-down</li>
             </ul>
-            <p class="tag">Best for maintenance</p>
-          </article>
+            <div class="boxFoot">Best for maintenance</div>
+          </div>
 
-          <article class="card">
+          <div class="box">
             <h3>Exterior Detail</h3>
-            <ul class="list">
+            <ul>
               <li>Foam wash + dry</li>
               <li>Wheel + tire deep clean</li>
               <li>Windows + trim wipe</li>
             </ul>
-            <p class="tag">Best for shine</p>
-          </article>
+            <div class="boxFoot">Best for shine</div>
+          </div>
 
-          <article class="card">
+          <div class="box">
             <h3>Full Detail</h3>
-            <ul class="list">
+            <ul>
               <li>Interior vacuum + wipe</li>
               <li>Exterior detail included</li>
               <li>Door jambs + finishing touches</li>
             </ul>
-            <p class="tag">Best overall value</p>
-          </article>
+            <div class="boxFoot">Best overall value</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="section section--alt">
+    <!-- Pricing -->
+    <section id="pricing" class="section alt">
       <div class="container">
-        <div class="sectionHead">
-          <h2>Pricing</h2>
-          <p>Simple, transparent, and fair. Ask about <strong>$10 off first detail</strong>.</p>
-        </div>
+        <h2>Pricing</h2>
+        <p class="muted">Simple, transparent, and fair. Ask about <strong>$10 off first detail</strong>.</p>
 
-        <div class="grid3">
-          <article class="priceCard">
-            <h3>Quick Wash</h3>
-            <p class="price">$40<span>/starting</span></p>
-            <ul class="list">
+        <div class="priceGrid">
+          <div class="priceCard">
+            <div class="priceTop">
+              <div>
+                <div class="priceName">Quick Wash</div>
+                <div class="priceValue">$40 <span class="per">/starting</span></div>
+              </div>
+            </div>
+            <ul>
               <li>Hand wash + dry</li>
               <li>Wheels + tires</li>
               <li>Windows</li>
             </ul>
-            <a class="btn btn--dark" href="#contact">Book Quick Wash</a>
-          </article>
+            <a class="btn ghost full" href="sms:+19493751329?&body=Hi%20Precision%20Mobile%20Detailing!%20I%20want%20to%20book%20a%20Quick%20Wash.%20My%20car%20is%20a%20____%20and%20I%E2%80%99m%20in%20____.%20Best%20time%20is%20____.">Book Quick Wash</a>
+          </div>
 
-          <article class="priceCard priceCard--featured">
-            <div class="ribbon">Most popular</div>
-            <h3>Full Detail</h3>
-            <p class="price">$80<span>/starting</span></p>
-            <ul class="list">
+          <div class="priceCard featured">
+            <div class="tag">Most popular</div>
+            <div class="priceTop">
+              <div>
+                <div class="priceName">Full Detail</div>
+                <div class="priceValue">$80 <span class="per">/starting</span></div>
+              </div>
+            </div>
+            <ul>
               <li>Interior vacuum + wipe</li>
               <li>Exterior detail</li>
               <li>Finishing touches</li>
             </ul>
-            <a class="btn btn--primary" href="#contact">Book Full Detail</a>
-          </article>
+            <a class="btn primary full" href="sms:+19493751329?&body=Hi%20Precision%20Mobile%20Detailing!%20I%20want%20to%20book%20a%20Full%20Detail.%20My%20car%20is%20a%20____%20and%20I%E2%80%99m%20in%20____.%20Best%20time%20is%20____.">Book Full Detail</a>
+          </div>
 
-          <article class="priceCard">
-            <h3>Wax Finish</h3>
-            <p class="price">$—<span>/quote</span></p>
-            <ul class="list">
+          <div class="priceCard">
+            <div class="priceTop">
+              <div>
+                <div class="priceName">Wax Finish</div>
+                <div class="priceValue">$— <span class="per">/quote</span></div>
+              </div>
+            </div>
+            <ul>
               <li>Added protection</li>
               <li>Deep gloss</li>
               <li>Great for resale</li>
             </ul>
-            <a class="btn btn--dark" href="sms:+19493751329?&body=Hi%20Brent%20%26%20Jaxson!%20Can%20I%20get%20a%20quote%20for%20a%20wax%20finish%3F%20Car%3A%20____%20Location%3A%20____">
-              Text for Wax Quote
-            </a>
-          </article>
+            <a class="btn ghost full" href="sms:+19493751329?&body=Hi%20Precision%20Mobile%20Detailing!%20I%20want%20a%20Wax%20Finish%20quote.%20My%20car%20is%20a%20____.%20Can%20I%20send%20photos%3F%20I%E2%80%99m%20in%20____.">Text for Wax Quote</a>
+          </div>
         </div>
 
         <p class="fine center">
@@ -211,114 +226,136 @@
       </div>
     </section>
 
-    <section id="reviews" class="section">
+    <!-- Flyers (your images) -->
+    <section id="flyers" class="section">
       <div class="container">
-        <div class="sectionHead">
-          <h2>What customers say</h2>
-          <p>Replace these with real reviews when you have them.</p>
+        <h2>Flyers</h2>
+        <p class="muted">Tap any flyer to view full size.</p>
+
+        <div class="flyerGrid">
+          <a class="flyerCard" href="assets/flyer-standard.jpg" target="_blank" rel="noreferrer">
+            <img src="assets/flyer-standard.jpg" alt="Standard exterior wash flyer">
+          </a>
+          <a class="flyerCard" href="assets/flyer-premium.jpg" target="_blank" rel="noreferrer">
+            <img src="assets/flyer-premium.jpg" alt="Premium interior and exterior detail flyer">
+          </a>
+          <a class="flyerCard wide" href="assets/flyer-main.jpg" target="_blank" rel="noreferrer">
+            <img src="assets/flyer-main.jpg" alt="Main Precision Mobile Detailing flyer">
+          </a>
         </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section alt">
+      <div class="container">
+        <h2>What customers say</h2>
+        <p class="muted">Replace these with real reviews when you have them.</p>
 
         <div class="grid3">
-          <figure class="review">
-            <blockquote>“Showed up on time and my car looked brand new. Worth it.”</blockquote>
-            <figcaption>— Local customer</figcaption>
-          </figure>
-          <figure class="review">
-            <blockquote>“Interior was spotless, even the tight spots. Super friendly.”</blockquote>
-            <figcaption>— Local customer</figcaption>
-          </figure>
-          <figure class="review">
-            <blockquote>“Fast and affordable. I booked again the next month.”</blockquote>
-            <figcaption>— Local customer</figcaption>
-          </figure>
+          <div class="quote">
+            <p>“Showed up on time and my car looked brand new. Worth it.”</p>
+            <span>— Local customer</span>
+          </div>
+          <div class="quote">
+            <p>“Interior was spotless, even the tight spots. Super friendly.”</p>
+            <span>— Local customer</span>
+          </div>
+          <div class="quote">
+            <p>“Fast and affordable. I booked again the next month.”</p>
+            <span>— Local customer</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section section--alt">
+    <!-- FAQ -->
+    <section id="faq" class="section">
       <div class="container">
-        <div class="sectionHead">
-          <h2>FAQ</h2>
-          <p>Quick answers so you can book confidently.</p>
-        </div>
-
+        <h2>FAQ</h2>
         <div class="faq">
           <details>
-            <summary>Do you bring your own water and supplies?</summary>
-            <p>We bring our supplies. If water access is available, that helps — if not, text us your situation and we’ll confirm options.</p>
+            <summary>Do you come to apartments?</summary>
+            <p>Yes — apartment-friendly service. Let us know your parking setup and we’ll work with it.</p>
           </details>
+
           <details>
-            <summary>How long does a detail take?</summary>
-            <p>Most jobs are 45–90 minutes depending on size and condition. Full details can take longer.</p>
+            <summary>Do you bring water and supplies?</summary>
+            <p>We bring supplies. If you have water access, it helps — if not, text us and we’ll confirm options.</p>
           </details>
+
           <details>
-            <summary>Where do you service?</summary>
-            <p>San Marcos and nearby areas (Escondido, Vista, Carlsbad, San Diego North County). Text your city and we’ll confirm.</p>
+            <summary>How long does it take?</summary>
+            <p>Quick Wash: ~45–60 minutes. Full Detail: ~1.5–2.5 hours depending on condition.</p>
           </details>
+
           <details>
-            <summary>What’s the $10 off first detail?</summary>
-            <p>First-time customers get $10 off a qualifying detail. Mention it when booking.</p>
+            <summary>What areas do you serve?</summary>
+            <p>San Marcos + nearby (Escondido, Vista, Carlsbad, Oceanside). Text your city to confirm.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container contact">
-        <div>
+    <!-- Contact + Gallery -->
+    <section id="contact" class="section alt">
+      <div class="container contactGrid">
+        <div class="contactLeft">
           <h2>Book now</h2>
-          <p class="lead">Call or text and we’ll lock in a time.</p>
+          <p class="muted">Call or text and we’ll lock in a time.</p>
 
-          <div class="contactCards">
-            <a class="contactCard" href="tel:+19493751329">
-              <span class="icon" aria-hidden="true">📞</span>
-              <div>
-                <strong>Call</strong>
-                <span>(949) 375-1329</span>
-              </div>
-            </a>
-
-            <a class="contactCard" href="sms:+19493751329?&body=Hi%20Brent%20%26%20Jaxson!%20I%27d%20like%20to%20book.%20Car%3A%20____%20Service%3A%20____%20City%3A%20____%20Best%20time%3A%20____">
-              <span class="icon" aria-hidden="true">💬</span>
-              <div>
-                <strong>Text</strong>
-                <span>Quick booking message</span>
-              </div>
-            </a>
-
-            <a class="contactCard" href="https://www.google.com/maps/search/?api=1&query=San+Marcos+CA" target="_blank" rel="noreferrer">
-              <span class="icon" aria-hidden="true">📍</span>
-              <div>
-                <strong>Service area</strong>
-                <span>San Marcos + nearby</span>
-              </div>
-            </a>
+          <div class="contactBtns">
+            <a class="btn primary full" href="tel:+19493751329">Call (949) 375-1329</a>
+            <a class="btn ghost full" href="sms:+19493751329?&body=Hi%20Precision%20Mobile%20Detailing!%20I%20want%20to%20book%20a%20detail.%20My%20car%20is%20a%20____%20and%20I%20need%20____.%20I%E2%80%99m%20located%20in%20____.%20Best%20time%20is%20____.">Text quick booking message</a>
           </div>
 
-          <p class="fine">Hours: update this anytime in <code>index.html</code>.</p>
+          <div class="smallBox">
+            <div><strong>Service area</strong> San Marcos + nearby</div>
+            <div class="fine">Hours: update this anytime in your code.</div>
+          </div>
         </div>
 
-        <div class="contactPanel">
-          <h3>Before &amp; after gallery</h3>
-          <p class="fine">Add your photos in <code>/assets</code> and update the filenames below.</p>
+        <div class="contactRight">
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Before & after gallery</div>
+              <div class="cardSub">Add photos in <code>/assets</code> and update filenames below.</div>
+            </div>
 
-          <div class="gallery">
-            <img src="assets/car1.jpg" alt="Car after detailing example 1" loading="lazy" />
-            <img src="assets/car2.jpg" alt="Car after detailing example 2" loading="lazy" />
-            <img src="assets/car3.jpg" alt="Car after detailing example 3" loading="lazy" />
-            <img src="assets/car4.jpg" alt="Car after detailing example 4" loading="lazy" />
+            <div class="gallery">
+              <div class="galItem">
+                <img src="assets/gallery1.jpg" alt="Car after detailing example 1" onerror="this.style.display='none'">
+                <div class="galLabel">gallery1.jpg</div>
+              </div>
+              <div class="galItem">
+                <img src="assets/gallery2.jpg" alt="Car after detailing example 2" onerror="this.style.display='none'">
+                <div class="galLabel">gallery2.jpg</div>
+              </div>
+              <div class="galItem">
+                <img src="assets/gallery3.jpg" alt="Car after detailing example 3" onerror="this.style.display='none'">
+                <div class="galLabel">gallery3.jpg</div>
+              </div>
+              <div class="galItem">
+                <img src="assets/gallery4.jpg" alt="Car after detailing example 4" onerror="this.style.display='none'">
+                <div class="galLabel">gallery4.jpg</div>
+              </div>
+            </div>
+
+            <p class="fine">
+              Tip: upload photos as <code>gallery1.jpg</code>, <code>gallery2.jpg</code>, etc. into <code>assets/</code>.
+            </p>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> Brent &amp; Jaxson Mobile Detailing. All rights reserved.</p>
-      <p class="fine">Built with GitHub Pages.</p>
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="container footRow">
+        <div>© <span id="year"></span> Precision Mobile Detailing. All rights reserved.</div>
+        <div class="fine">Built with GitHub Pages.</div>
+      </div>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
